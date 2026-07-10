@@ -108,5 +108,5 @@ Podés usar el código como quieras siguiendo esta licencia: [CC BY-NC](https://
 
 ---
 
-Suerte en su cursada, no sufran mucho o se van a quedar pelados c(-_-c)
+Suerte en su cursada, dale que se puede
 ## Desarrollado con ❤️ por Martín Sogoloff
