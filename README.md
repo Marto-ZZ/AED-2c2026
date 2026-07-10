@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=DM+Mono&size=25&duration=2500&pause=800&color=51A2FF&center=true&vCenter=true&width=600&height=70&lines=Algoritmos+y+Estructuras+de+Datos"/>
+  <img src="https://readme-typing-svg.herokuapp.com/?font=DM+Mono&size=25&duration=2500&pause=800&color=FFA500&center=true&vCenter=true&width=600&height=70&lines=Algoritmos+y+Estructuras+de+Datos"/>
 </h1>
   
 ### 🚧 EN CONSTRUCCIÓN 🚧
@@ -12,7 +12,7 @@
 ## 📁 Estructura del repo
 
 ```
-AED-1c2026/
+AED-2c2026/
 ├── practicas/                ← Carpeta de las prácticas teóricas
 │   ├── macros/               ← Elementos de referencia para el archivo de soluciones
 │   │   └── preambulo.tex
@@ -41,8 +41,8 @@ Importantísimo entender que las guías estan sujetas a tener errores propios, n
 Cada pdf se puede volver un toque insoportable bajar 30+ páginas para ir a cada ejercicio, navega entre ejercicios con los botones dentro del índice y el "volver al índice" en los pie de página.
 Dejo aca los links directos a cada práctica resuelta:
 
-- [Práctica 1](https://github.com/Marto-ZZ/AED-1c2026/blob/main/practicas/1-practica/1-sol.pdf)
-- [Práctica 2](https://github.com/Marto-ZZ/AED-1c2026/blob/main/practicas/2-practica/2-sol.pdf)
+- [Práctica 1](https://github.com/Marto-ZZ/AED-2c2026/blob/main/practicas/1-practica/1-sol.pdf)
+- [Práctica 2](https://github.com/Marto-ZZ/AED-2c2026/blob/main/practicas/2-practica/2-sol.pdf)
 
 ---
 
@@ -50,8 +50,8 @@ Dejo aca los links directos a cada práctica resuelta:
 
 En las carpetas de tipo `laboratorio-i` lo importante es tanto la carpeta `src`, que contiene el código que se trabajo en la clase, como los pdf de tipo `clase.pdf` con contenido mas teórico que acompaña a la clase.
 
-- [Labo 1](https://github.com/Marto-ZZ/AED-1c2026/tree/main/laboratorio/1-labo)
-- [Labo 2](https://github.com/Marto-ZZ/AED-1c2026/tree/main/laboratorio/2-labo)
+- [Labo 1](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorio/1-labo)
+- [Labo 2](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorio/2-labo)
 
 ---
 
@@ -72,7 +72,7 @@ Para contribuir:
 
 **1** - Cloná el repo:
 ```bash
-git clone https://github.com/Marto-ZZ/AED-1c2026
+git clone https://github.com/Marto-ZZ/AED-2c2026
 ```
 
 **2** - Creá una rama con nombre descriptivo (ej: `ej-5-practica-2` o `taller-3-java`) y pusheala para que los demás se enteren:
