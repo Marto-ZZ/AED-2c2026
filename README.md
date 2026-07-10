@@ -46,7 +46,7 @@ Dejo aca los links directos a cada práctica resuelta:
 
 ---
 
-## Sobre las prácticas
+## Sobre los labos
 
 En las carpetas de tipo `laboratorio-i` lo importante es tanto la carpeta `src`, que contiene el código que se trabajo en la clase, como los pdf de tipo `clase.pdf` con contenido mas teórico que acompaña a la clase.
 
