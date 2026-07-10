@@ -31,7 +31,7 @@ AED-1c2026/
 
 ---
 
-_¡Estrellita 🌟 al repo super útil! (así farmeo stats)_
+_🌟 al repo messirve (así farmeo stats)_
 
 ## Sobre las prácticas
 
