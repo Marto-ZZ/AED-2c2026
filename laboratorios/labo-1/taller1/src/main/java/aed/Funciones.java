@@ -168,9 +168,10 @@ class Funciones {
     }
 
     int maximo(int[] xs) {
-        int res = 0;
-        for (int i = 0; i <= xs.length; i++) {
-            if (xs[i] > res) res = i;
+        int res = xs[0];
+        if (xs.length == 1) return res;
+        for (int i = 1; i < xs.length; i++) {
+            if (xs[i] > res) res = xs[i];
         }
         return res;
     }
