@@ -142,7 +142,7 @@ class Funciones {
 /***  Segunda parte: Debugging ***/
 
     boolean xor(boolean a, boolean b) {
-        return a || b && !(a && b);
+        return (a || b) && !(a && b);
     }
 
     boolean iguales(int[] xs, int[] ys) {
