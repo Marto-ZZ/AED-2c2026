@@ -176,15 +176,12 @@ class Funciones {
     }
 
     boolean todosPositivos(int[] xs) {
-        boolean res = false;
         for (int x : xs) {
-            if (x > 0) {
-                res = true;
-            } else {
-                res = false;
+            if (x < 1) {
+                return false;
             }
         }
-        return res;
+        return true;
     }
 
 }
