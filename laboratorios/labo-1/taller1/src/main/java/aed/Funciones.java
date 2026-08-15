@@ -82,27 +82,60 @@ class Funciones {
     }
 
     int busqueda(int[] numeros, int buscado) {
-        // COMPLETAR
-        return 0;
+        int posicion = 0;
+        for (int i = 0; i < numeros.length; i++){
+            if (numeros[i] == buscado){
+                posicion = i;
+            }
+        }
+        return posicion;
     }
 
     boolean tienePrimo(int[] numeros) {
-        // COMPLETAR
+        for (int i = 0; i < numeros.length; i++){
+            if (esPrimo(numeros[i]) == true){
+                return true;
+            }
+        }
         return false;
     }
 
     boolean todosPares(int[] numeros) {
-        // COMPLETAR
-        return false;
+        for (int i = 0; i < numeros.length; i++){
+            if (esPar(numeros[i]) == false){
+                return false;
+            }
+        }
+        return true;
     }
 
     boolean esPrefijo(String s1, String s2) {
-        // COMPLETAR
-        return false;
+        if (s1.length() > s2.length()){
+            return false;
+        }
+        for (int i = 0; i < s1.length(); i++){
+            if(s1.charAt(i) != s2.charAt(i)){
+                return false;
+            }
+        }
+        return true;
     }
 
     boolean esSufijo(String s1, String s2) {
-        // COMPLETAR
+        if (s1.length() > s2.length()){
+            return false;
+        }
+        String s1_reves = "";
+        String s2_reves = "";
+        for (int i = s1.length()-1; i > -1; i--){
+            s1_reves += s1.charAt(i);
+        }
+        for (int i = s2.length()-1; i > -1; i--){
+            s2_reves += s2.charAt(i);
+        }
+        if (esPrefijo(s1_reves, s2_reves)){
+            return true;
+        }
         return false;
     }
 
