@@ -21,6 +21,8 @@ AED-2c2026/
 │       │   └── ej-z-i.tex    ← formato de archivo .tex de cada ejercicio número z de la guía i
 │       ├── i-sol.tex         ← guía resuelta en laTex
 │       └── i-sol.pdf         ← guía resuelta en pdf
+├──  teoricas/                ← Carpeta con las clases de la teorica
+│    └── teorica-i.pdf        ← Pdf de las clases teoricas
 └── laboratorio/              ← Carpeta de las clases de laboratorio
     └── i-labo/               ← i representa el orden con el que fueron dados los labos
         ├── src/              ← carpeta con todo el código dado en el labo
@@ -52,6 +54,17 @@ En las carpetas de tipo `laboratorio-i` lo importante es tanto la carpeta `src`,
 
 - [Labo 1](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorio/1-labo)
 - [Labo 2](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorio/2-labo)
+
+---
+
+# Sobre las teoricas
+
+En la carpeta `teoricas` estan los pdf con las teoricas subidas en orden de `teorica-i.pdf`.
+
+- [Teorica 0](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-0.pdf)
+- [Teorica 1](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-1.pdf)
+- [Teorica 2](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-2.pdf)
+- [Teorica 3](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-3.pdf)
 
 ---
 
