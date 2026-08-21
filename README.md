@@ -14,21 +14,20 @@
 ```
 AED-2c2026/
 ├── practicas/                ← Carpeta de las prácticas teóricas
-│   ├── macros/               ← Elementos de referencia para el archivo de soluciones
-│   │   └── preambulo.tex
-│   └── i-practica/           ← i representa el número de la práctica
+│   └── practica-i/           ← i representa el número de la práctica
 │       ├── ejercicios-i/     ← carpeta con cada ejercicio de la práctica i
 │       │   └── ej-z-i.tex    ← formato de archivo .tex de cada ejercicio número z de la guía i
-│       ├── i-sol.tex         ← guía resuelta en laTex
 │       └── i-sol.pdf         ← guía resuelta en pdf
 ├──  teoricas/                ← Carpeta con las clases de la teorica
 │    └── teorica-i.pdf        ← Pdf de las clases teoricas
 └── laboratorio/              ← Carpeta de las clases de laboratorio
-    └── i-labo/               ← i representa el orden con el que fueron dados los labos
-        ├── src/              ← carpeta con todo el código dado en el labo
-        │   ├── main/         ← archivo main de java
-        │   └── test/         ← test para el archivo main
-        └── clase.pdf         ← pdf dado en la clase
+    └── labo-i/               ← i representa el orden con el que fueron dados los labos
+        ├── taller/           ← carpeta raiz de cada taller
+        |    └── src/         ← carpeta con todo el código dado en el labo
+        |        ├── main/    ← donde vive el archivo main de java
+        |        └── test/    ← donde viven los test del taller
+        ├── enunciado.pdf     ← enunciado del taller
+        └── clase.pdf         ← clase teorica para hacer el taller
 ```
 
 ---
@@ -43,17 +42,18 @@ Importantísimo entender que las guías estan sujetas a tener errores propios, n
 Cada pdf se puede volver un toque insoportable bajar 30+ páginas para ir a cada ejercicio, navega entre ejercicios con los botones dentro del índice y el "volver al índice" en los pie de página.
 Dejo aca los links directos a cada práctica resuelta:
 
-- [Práctica 1](https://github.com/Marto-ZZ/AED-2c2026/blob/main/practicas/1-practica/1-sol.pdf)
-- [Práctica 2](https://github.com/Marto-ZZ/AED-2c2026/blob/main/practicas/2-practica/2-sol.pdf)
+- [Práctica 1](https://github.com/Marto-ZZ/AED-2c2026/blob/main/practicas/practica-1/1-sol.pdf)
+- [Práctica 2](https://github.com/Marto-ZZ/AED-2c2026/blob/main/practicas/practica-2/2-sol.pdf)
 
 ---
 
 ## Sobre los labos
 
 En las carpetas de tipo `laboratorio-i` lo importante es tanto la carpeta `src`, que contiene el código que se trabajo en la clase, como los pdf de tipo `clase.pdf` con contenido mas teórico que acompaña a la clase.
+Ademas pueden encontrar los pdf teoricos para resolver cada labo.
 
-- [Labo 1](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorio/1-labo)
-- [Labo 2](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorio/2-labo)
+- [Labo 1](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorios/labo-1)
+- [Labo 2](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorios/labo-2)
 
 ---
 
