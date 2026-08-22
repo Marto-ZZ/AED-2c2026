@@ -63,7 +63,7 @@ class ArregloRedimensionableTest {
         assertEquals(1, vector.longitud());
         assertEquals(new Recordatorio("5", new Fecha(1, 5), new Horario(0, 4)), vector.obtener(0));
 
-    }
+    } 
 
     @Test
     void modificarPosición() {
