@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,top=3cm,right=2.5cm,bottom=3cm,bindingoffset=0.5cm]{geometry}
+\usepackage{AEDLogica, AEDEspecificacion, AEDTADs}
+\usepackage{caratula}
+
+
+\titulo{Trabajo práctico}
+\subtitulo{El subtitulo adecuado}
+
+\fecha{\today}
+
+\materia{Algoritmos y Estructuras de Datos}
+\grupo{Nombre del grupo} 
+
+\integrante{Cosme, Fulanito}{1113/22}{cosme@algunmail.com}
+% \integrante{Apellido, Nombre2}{002/01}{email2@dominio.com} %
+
+
+% Declaramos donde van a estar las figuras
+% No es obligatorio, pero suele ser comodo
+\graphicspath{{../static/}}
+
+% Asi pueden escribir nuevos comandos. 
+% Este por ejemplo asegura q los nombres 
+% que figuren con una tipografia diferenciada  
+\newcommand{\Tipo}[1]{\mathsf{#1}}
+% la sintaxis es \newcommand{\nombreDeLaMacro}[cantidadDeParametros]{Lo que va ser remplazado por el macro} 
+\newcommand{\norm}[1]{\vert #1\vert}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\section{Macros para escribir en LaTeX}
+
+Para facilitar la escritura del trabajo práctico en LaTeX, les proveemos de varias macros que les permitirán escribir especificaciones en lógica de primer orden.
+Por ejemplo, podrán hacer uso de comandos que definen los conectores lógicos: $\land, \lor, \implica$ y también los operadores de la lógica trivaluada $\yLuego$, $\oLuego$, $\implicaLuego$.
+
+Además, disponen de comandos para cuantificadores: $\paraTodo{x}{\mathbb{Z}}{x \geq 0 \lor x < 0}$, $\existe{x}{\mathbb{Z}}{x \geq 0}$. A estos comandos se les puede agregar un \texttt{Largo} al final para que ocupen múltiples renglones.
+
+\section{Ejemplos de uso de las macros}
+
+
+\begin{tad}{EjemploDeTAD}
+
+
+\obs{secuenciaDeCaracteres}{\seq{\cha}}
+\\
+\obs{conjuntoDeTuplas}{\conj{\tupla{nombre: \seq{\cha}, apellido: \seq{\cha}}}}
+\\
+
+
+\begin{proc}{crearTAD}
+{
+\In caracteres: \seq{\cha},
+\In secuenciaDeNombres: \seq{\tupla{nombre: \seq{\cha}, apellido: \seq{\cha}}}
+}{
+\Tipo{EjemploDeTAD}
+}
+    \requiere{predicadoUnilinea(caracteres)}
+    \asegura{res.secuenciaDeCaracteres = caracteres}
+    \aseguraLargo{ \norm{res.conjuntoDeTuplas} = \norm{secuenciaDeNombres} \land \\predicadoMultilinea(secuenciaDeNombres, res.conjuntoDeTuplas) }
+\end{proc}
+
+\predLargo{predicadoMultilinea}{s: \seq{\cha}, conjunto: \conj{\tupla{\seq{\cha}, \seq{\cha}}}}{
+    \paraTodo{i}{\Z}{0 \leq i < \norm{s} 
+    \implicaLuego s[i] \in c}
+}
+
+\pred{predicadoUnilínea}{s: \seq{\cha}}{
+    \norm{s} > 0
+}
+
+\aux{unAuxiliar}{k: \Z,l: \Z}{\Z}{\norm{k-l}}
+
+\end{tad}
+
+
+
+
+\end{document}

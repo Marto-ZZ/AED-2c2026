@@ -1,0 +1,32 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{AEDUtil}[2025/08/17 Algunas cosas utiles que no encajan en el resto de paquetes]
+
+
+% Estoy seguro de que hay alguna forma de definir algo tipo \newmathcommand pero 
+% claramente es mas complicado de lo que parece y no me gusta tanto latex
+\newcommand{\RequireMathMode}[2]{
+    \ifmmode #2 \else
+    \PackageError{AED}{No se puede usar #1 afuera del modo matematico}{}
+    \fi
+}
+
+% Uso: \RequireMathMode{Nombre de la macro}{macro}
+
+
+\newcommand{\Obsoleto}[3]{
+    \PackageWarning{AED}{#1 Es obsoleto, use #2}{}
+	#3
+}
+
+% Uso: \Obsoleto{Nombre de la macro obsoleta}{Nombre de la macro que reemplaza}{macro}
+
+
+% Cuidado con este renew de aca abajo, pisa el simbolo de congruencia creo
+\renewcommand{\mod}{\RequireMathMode{mod}{\text{mód }}}
+
+% Comando para indentar cosas
+\newcommand{\tab}{\hspace*{2em}}
+
+% Por ahora dejo esto aca para poder compilar todo pero despues hay que ver bien en donde
+% deberiamos meterlo. Revisar.
+\newcommand{\hoare}[3]{\{$#1$\}\text{\textbf{ #2 }}\{$#3$\}}
