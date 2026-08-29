@@ -1,0 +1,26 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{AEDTADs}[2025/08/14 Macros de especificacion de TADs para AED]
+
+\RequirePackage{AEDLogica}  % En realidad ya viene adentro del de especificacion pero como vamos a usar estas cosas por separado creo que tiene sentido pedirlo igual
+\RequirePackage{AEDEspecificacion}
+\RequirePackage{AEDUtil}    % RequireMathMode
+\RequirePackage{changepage} % Para indentar, adjustwidth depende de esto
+
+% \obs{Nombre}{Tipo}
+\newcommand{\obs}[2]{\texttt{obs} #1 $: #2$}
+
+% \begin{tad}{Nombre}
+% Si es un tad parametrico, meter eso directo en el nombre
+\newenvironment{tad}[1]{
+    \noindent\texttt{TAD} #1 \{
+    \smallskip
+    \begin{adjustwidth}{+1.5em}{}
+}{
+    \end{adjustwidth}
+    \}
+}
+
+
+% Algunos TADs comunes
+\newcommand{\Diccionario}[2]{\RequireMathMode{Diccionario}{\TipoParamDos{Diccionario}{#1}{#2}}}
+\newcommand{\Conjunto}[1]{\RequireMathMode{Conjunto}{\TipoParam{Diccionario}{#1}}}

@@ -1,0 +1,38 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{AEDLogica}[2025/08/11 Macros de logica para AED] % Me da miedo poner tildes aca asi que no lo hago
+
+\RequirePackage{amssymb}         % Para los simbolos de los conjuntos (naturales, enteros, reales). mathbb depende de esto.
+\RequirePackage{amsmath}         % Util en general pero en este paquete es especificamente para \text en mod
+\RequirePackage{changepage}      % Para indentar, adjustwidth depende de esto
+\RequirePackage{AEDUtil}         % Para forzar que las cosas solo se usen en modo matematico (RequireMathMode)
+
+% Todos los comandos de este paquete se pueden usar solo en modo matematico
+
+%  Por ahí tiene sentido pasar los tipos a su propio paquete?
+\newcommand{\N}{\RequireMathMode{N}{\mathbb{N}}} % No estamos usando naturales en esta versión de la materia
+\newcommand{\Z}{\RequireMathMode{Z}{\mathbb{Z}}}
+\newcommand{\Q}{\RequireMathMode{Q}{\mathbb{Q}}}
+\newcommand{\R}{\RequireMathMode{R}{\mathbb{R}}}
+
+\newcommand{\implica}{\RequireMathMode{implica}{\rightarrow}}
+\newcommand{\sii}{\RequireMathMode{sii}{\leftrightarrow}}
+
+\newcommand{\indefinido}{\RequireMathMode{indefinido}{\bot}}
+\newcommand{\yLuego}{\RequireMathMode{yLuego}{\land_L}}
+\newcommand{\oLuego}{\RequireMathMode{oLuego}{\lor_L}}
+\newcommand{\implicaLuego}{\RequireMathMode{implicaLuego}{\implica_L}}
+
+\newcommand{\cuantificador}[4]{\RequireMathMode{cuantificadores}{(#1 #2: #3)\ (#4)}}
+\newcommand{\cuantificadorLargo}[4]{\cuantificador{#1}{#2}{#3}{
+    $
+    \begin{adjustwidth}{+2em}{}
+        $#4$
+    \end{adjustwidth}
+    $
+}}
+
+\newcommand{\existe}[3]{\cuantificador{\exists}{#1}{#2}{#3}}
+\newcommand{\existeLargo}[3]{\cuantificadorLargo{\exists}{#1}{#2}{#3}}
+
+\newcommand{\paraTodo}[3]{\cuantificador{\forall}{#1}{#2}{#3}}
+\newcommand{\paraTodoLargo}[3]{\cuantificadorLargo{\forall}{#1}{#2}{#3}}
