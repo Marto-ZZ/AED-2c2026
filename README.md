@@ -54,6 +54,7 @@ Ademas pueden encontrar los pdf teoricos para resolver cada labo.
 
 - [Labo 1](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorios/labo-1)
 - [Labo 2](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorios/labo-2)
+- [Labo 3](https://github.com/Marto-ZZ/AED-2c2026/tree/main/laboratorios/labo-3)
 
 ---
 
@@ -65,6 +66,8 @@ En la carpeta `teoricas` estan los pdf con las teoricas subidas en orden de `teo
 - [Teorica 1](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-1.pdf)
 - [Teorica 2](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-2.pdf)
 - [Teorica 3](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-3.pdf)
+- [Teorica 4](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-4.pdf)
+- [Teorica 5](https://github.com/Marto-ZZ/AED-2c2026/blob/main/teoricas/teorica-5.pdf)
 
 ---
 
